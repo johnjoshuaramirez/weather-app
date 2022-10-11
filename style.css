@@ -43,6 +43,10 @@ header i {
    margin-right: 8px;
 }
 
+header i:hover {
+   color:  #0095ff;
+}
+
 .wrapper.active header i {
    margin-left: 5px;
    font-size: 30px;
