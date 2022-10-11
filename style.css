@@ -37,8 +37,32 @@ header i {
    margin-right: 8px;
 }
 
-.wrapper  .input-part {
+.wrapper .input-part {
    margin: 20px 25px 30px;
+   display: none;
+}
+
+.input-part .info-text {
+   display: none;
+   font-size: 17px;
+   text-align: center;
+   padding: 12px 10px;
+   margin-bottom: 15px;
+   border-radius: 7px;
+}
+
+.info-text.error {
+   display: block;
+   color: #721c24;
+   background-color: #f8d7da;
+   border: 1px solid #f5c6cb;
+}
+
+.info-text.pending {
+   display: block;
+   color: #0c5460;
+   background-color: #f8d7da;
+   border: 1px solid #f5c6cb;
 }
 
 .input-part input, .input-part button {
@@ -53,6 +77,10 @@ header i {
 .input-part input {
    text-align: center;
    border: 1px solid #bfbfbf;
+}
+
+.input-part input:focus, .input-part input:valid {
+   border: 2px solid #43affc;
 }
 
 .input-part button {
@@ -79,6 +107,3 @@ header i {
    font-size: 19px;
 }
 
-.input-part .info-text {
-   font-size: 17px;
-}
