@@ -10,7 +10,7 @@ const information = document.querySelector('.information');
 
 async function getData() { 
    try {
-      const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=ca895c8dee0e47768df11549232703&q=${input.value}`, { mode: 'cors' });
+      const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=ca895c8dee0e47768df11549232703&q=${input.value}`, { mode: 'cors' });
       const data = await response.json();
       image.src = data.current.condition.icon
       weather.innerText = data.current.condition.text;
